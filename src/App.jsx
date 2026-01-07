@@ -74,8 +74,7 @@ const translations = {
         },
         footer: {
             title: "准备好品尝真味了吗？",
-            subtitle: "本项目为演示作品，功能持续完善中，敬请期待。",
-            credit: "基于 React Native & Expo 构建。设计于伯克利。"
+            subtitle: "本项目为演示作品，功能持续完善中，敬请期待。"
         }
     },
     en: {
@@ -139,8 +138,7 @@ const translations = {
         },
         footer: {
             title: "Ready to eat real?",
-            subtitle: "This is a portfolio project. Features are under development.",
-            credit: "Built with React Native & Expo. Designed in Berkeley."
+            subtitle: "This is a portfolio project. Features are under development."
         }
     }
 };
@@ -271,9 +269,9 @@ export default function App() {
                         className="relative flex justify-center items-end"
                     >
                         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-green-500/20 blur-[120px] rounded-full -z-10"></div>
-                        <PhoneMockup src="/imgs/首页.png" alt="FindRealTaste Home Screen" className="z-10 scale-100 md:scale-110" />
-                        <PhoneMockup src="/imgs/结果.png" className="hidden md:block absolute left-1/2 -translate-x-[320px] translate-y-12 scale-90 opacity-40 z-0 blur-[1px]" />
-                        <PhoneMockup src="/imgs/历史.png" className="hidden md:block absolute right-1/2 translate-x-[320px] translate-y-12 scale-90 opacity-40 z-0 blur-[1px]" />
+                        <PhoneMockup src="./imgs/首页.png" alt="FindRealTaste Home Screen" className="z-10 scale-100 md:scale-110" />
+                        <PhoneMockup src="./imgs/结果.png" className="hidden md:block absolute left-1/2 -translate-x-[320px] translate-y-12 scale-90 opacity-40 z-0 blur-[1px]" />
+                        <PhoneMockup src="./imgs/历史.png" className="hidden md:block absolute right-1/2 translate-x-[320px] translate-y-12 scale-90 opacity-40 z-0 blur-[1px]" />
                     </motion.div>
                 </div>
             </section>
@@ -321,7 +319,7 @@ export default function App() {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                             >
-                                <PhoneMockup src="/imgs/详情1.png" alt="Trust Score Detail" />
+                                <PhoneMockup src="./imgs/详情1.png" alt="Trust Score Detail" />
                             </motion.div>
                         </div>
                     </div>
@@ -360,7 +358,7 @@ export default function App() {
                                 animate={{ y: [0, -10, 0] }}
                                 transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
                             >
-                                <PhoneMockup src="/imgs/解析.png" alt="AI Analysis Loading" />
+                                <PhoneMockup src="./imgs/解析.png" alt="AI Analysis Loading" />
                                 {/* Floating Elements */}
                                 <div className="absolute -right-12 top-20 bg-white dark:bg-neutral-800 p-3 rounded-lg shadow-lg text-xs font-mono border dark:border-neutral-700 animate-pulse whitespace-nowrap">
                                     {t.ai.loadingTags[0]}
@@ -412,7 +410,7 @@ export default function App() {
                                 </div>
                             </div>
                             <div className="w-48 shrink-0">
-                                <img src="/imgs/结果.png" className="rounded-xl shadow-lg border-4 border-white dark:border-neutral-700 rotate-3 hover:rotate-0 transition-transform duration-500" alt="Feed" />
+                                <img src="./imgs/结果.png" className="rounded-xl shadow-lg border-4 border-white dark:border-neutral-700 rotate-3 hover:rotate-0 transition-transform duration-500" alt="Feed" />
                             </div>
                         </motion.div>
 
@@ -426,7 +424,7 @@ export default function App() {
                                 <p className="text-neutral-400 text-sm">{t.bento.profile.desc}</p>
                             </div>
                             <div className="mt-8 relative z-10">
-                                <img src="/imgs/用户页.png" className="rounded-[2rem] border-8 border-neutral-800 shadow-2xl" alt="Profile" />
+                                <img src="./imgs/用户页.png" className="rounded-[2rem] border-8 border-neutral-800 shadow-2xl" alt="Profile" />
                             </div>
                             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80 z-0"></div>
                         </motion.div>
@@ -441,7 +439,7 @@ export default function App() {
                                 <h3 className="text-xl font-bold">{t.bento.saved.title}</h3>
                             </div>
                             <p className="text-neutral-500 text-sm mb-4">{t.bento.saved.desc}</p>
-                            <img src="/imgs/收藏.png" className="w-full h-32 object-cover object-top rounded-lg opacity-80" alt="Saved" />
+                            <img src="./imgs/收藏.png" className="w-full h-32 object-cover object-top rounded-lg opacity-80" alt="Saved" />
                         </motion.div>
 
                         {/* Card 4: Details (Small) */}
@@ -468,8 +466,6 @@ export default function App() {
                 <div className="relative z-10 max-w-4xl mx-auto px-6">
                     <h2 className="text-5xl md:text-7xl font-bold tracking-tight mb-8">{t.footer.title}</h2>
                     <p className="text-xl text-neutral-400 mb-12">{t.footer.subtitle}</p>
-
-                    <p className="mt-8 text-neutral-600 text-sm">{t.footer.credit}</p>
                 </div>
             </section>
 
