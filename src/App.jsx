@@ -319,7 +319,7 @@ export default function App() {
                                 transition={{ duration: 0.8 }}
                                 viewport={{ once: true }}
                             >
-                                <PhoneMockup src="./imgs/detail1.png" alt="Trust Score Detail" />
+                                <PhoneMockup src="./imgs/detail3.png" alt="Trust Score Detail" />
                             </motion.div>
                         </div>
                     </div>
